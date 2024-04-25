@@ -49,4 +49,10 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
 (package! harpoon)
-(package! python-black)
+(package! jenkinsfile-mode :recipe
+  (:host github
+   :repo "john2x/jenkinsfile-mode"
+   :branch "master"))
+
+(package! tree-sitter)
+(package! tree-sitter-langs)
